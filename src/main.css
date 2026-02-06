@@ -1,0 +1,80 @@
+.container {
+    width: 100%;
+    max-width: var(--container-width);
+    margin-inline: auto;
+    padding: 1rem;
+}
+
+/* Header */
+.header {
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.header__logo {
+    font-size: var(--font-xl);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.5rem;
+}
+
+.header__subtitle {
+    color: var(--text-muted);
+    font-size: var(--font-base);
+}
+
+/* Grid Layout */
+.page-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Card Items */
+.page-grid__item {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    text-decoration: none;
+    color: var(--text-main);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.page-grid__item:hover {
+    border-color: var(--primary);
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px -10px rgba(50, 130, 184, 0.3);
+}
+
+.item__title {
+    font-size: var(--font-lg);
+    font-weight: 600;
+}
+
+.item__arrow {
+    color: var(--text-dim);
+    font-size: 1.5rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.page-grid__item:hover .item__arrow {
+    transform: translateX(5px);
+    color: var(--primary);
+}
+
+/* Footer */
+.footer {
+    margin-top: 5rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+    text-align: center;
+}
+
+.footer__text {
+    color: var(--text-dim);
+    font-size: var(--font-sm);
+}

@@ -3,27 +3,34 @@
 
 <head>
   <meta charset="UTF-8" />
-  <!-- <link rel="icon" type="image/svg+xml" href="/icons/index.svg" /> -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>siteshelf</title>
+  <title>Site Shelf</title>
   <link rel="stylesheet" href="./base.css">
   <link rel="stylesheet" href="./main.css">
 </head>
 
 <body>
-  <div id="site">
+  <div id="site" class="container">
     <header class="header">
       <h1 class="header__logo">Site Shelf</h1>
+      <p class="header__subtitle">A collection of modern landing page clones.</p>
     </header>
+
     <main class="page-grid">
-      <a href="./cursor-clone/" class="page-grid__item">Cursor Clone</a>
-      <a href="./mintlify-clone/" class="page-grid__item">Mintlify Clone</a>
+      <a href="./cursor-clone/" class="page-grid__item">
+        <span class="item__title">Cursor Clone</span>
+        <span class="item__arrow">→</span>
+      </a>
+      <a href="./mintlify-clone/" class="page-grid__item">
+        <span class="item__title">Mintlify Clone</span>
+        <span class="item__arrow">→</span>
+      </a>
     </main>
+
     <footer class="footer">
-      <p class="footer__text"></p>
+      <p class="footer__text">Built with plain HTML & CSS</p>
     </footer>
   </div>
-  <!-- <script type="module" src="/src/main.js"></script> -->
 </body>
 
 </html>
