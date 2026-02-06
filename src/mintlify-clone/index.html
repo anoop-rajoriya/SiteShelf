@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mintlify-clone</title>
+    <link rel="icon" type="image/svg+xml" href="/mintlify-assets/icon.svg">
+    <link rel="stylesheet" href="../base.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="mintlify">
+    <div class="site">
+        <header class="navbar">
+            <div class="navbar__logo">
+                <img src="/mintlify-assets/wordmark.svg" alt="header logo">
+            </div>
+            <nav class="nav">
+                <button class="nav__trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-menu-icon lucide-menu">
+                        <path d="M4 5h16" />
+                        <path d="M4 12h16" />
+                        <path d="M4 19h16" />
+                    </svg>
+                </button>
+                <ul class="nav__menu">
+                    <li><a href="#">resource</a></li>
+                    <li><a href="#">documenttation</a></li>
+                    <li><a href="#">customers</a></li>
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">pricing</a></li>
+                </ul>
+            </nav>
+            <div class="navbar__actions">
+                <button class="btn-outline btn">contact sales</button>
+                <button class="btn">start for free</button>
+            </div>
+        </header>
+        <main>
+            <section class="hero">
+                <div class="hero__bg"></div>
+                <a class="hero__cta" target="_blank" href="/blog/autopilot">
+                    <span>new</span>
+                    <p>Self-updating docs with agent suggestions</p>
+                    <svg viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="shrink-0 select-none size-4 text-white">
+                        <path
+                            d="M9 1C4.589 1 1 4.589 1 9C1 13.411 4.589 17 9 17C13.411 17 17 13.411 17 9C17 4.589 13.411 1 9 1ZM11.53 9.53L8.53 12.53C8.384 12.676 8.192 12.75 8 12.75C7.808 12.75 7.616 12.677 7.47 12.53C7.177 12.237 7.177 11.762 7.47 11.469L9.94 8.999L7.47 6.529C7.177 6.236 7.177 5.761 7.47 5.468C7.763 5.175 8.238 5.175 8.531 5.468L11.531 8.468C11.824 8.761 11.824 9.236 11.531 9.529L11.53 9.53Z"
+                            fill="currentColor"></path>
+                    </svg>
+                </a>
+                <div class="hero__body">
+                    <h1 class="hero__title">The Intelligent Knowledge Platform</h1>
+                    <p class="hero__sub-title">Helping
+                        teams create and maintain world-class documentation built for both humans and AI</p>
+                    <form>
+                        <input type=" email" required="" inputmode="email" autocomplete="email"
+                            placeholder="Email address" value=""><button data-slot="button" type="submit"
+                            class="btn">Start
+                            now</button>
+                    </form>
+                </div>
+                <div aria-hidden="true" class="hero__image">
+                    <img alt="Hero illustration" width="1080" height="656" src="/mintlify-assets/hero-image-light.svg">
+                </div>
+            </section>
+            <section class="social-proof">
+                <div class="grid">
+                    <p class="grid__item" aria-label="Anthropic" role="img" title="Anthropic">Anthropic</p>
+                    <p class="grid__item" aria-label="Coinbase" role="img" title="Coinbase">Coinbase</p>
+                    <p class="grid__item" aria-label="Microsoft" role="img" title="Microsoft">Microsoft</p>
+                    <p class="grid__item" aria-label="Perplexity" role="img" title="Perplexity">Perplexity</p>
+                    <p class="grid__item" aria-label="Hubspot" role="img" title="Hubspot">Hubspot</p>
+                    <p class="grid__item" aria-label="X" role="img" title="X">X</p>
+                    <p class="grid__item" aria-label="PayPal" role="img" title="PayPal">PayPal</p>
+                    <p class="grid__item" aria-label="Lovable" role="img" title="Lovable">Lovable</p>
+                </div>
+            </section>
+            <section class="story">
+                <a href="#" class="story__card">
+                    <div class="story-card__image"></div>
+                    <h2 class="story__title">Customers Story</h2>
+                    <p class="story__sub-title">See how Anthropic acceleratres ai development with mintlify</p>
+                    <span>read story</span>
+                    <div class="story__cluster">
+                        <div class="story__item">
+                            <span>2m+</span>
+                            <p>montly active developers</p>
+                        </div>
+                        <div class="story__item">
+                            <span>2+</span>
+                            <p>product serviced cloud, api, mcp, and cloud code</p>
+                        </div>
+                    </div>
+                </a>
+            </section>
+        </main>
+        <footer>
+            <div>
+                <h3>
+                    explore</h3>
+                <ul>
+                    <li><a target="_self" data-slot="button" href="/startups">Startups</a></li>
+                    <li><a target="_self" data-slot="button" href="/enterprise">Enterprise</a></li>
+                    <li><a target="_self" data-slot="button" href="/switch">Switch</a></li>
+                    <li><a target="_self" data-slot="button" href="/oss-program">OSS Program</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>
+                    resources</h3>
+                <ul>
+                    <li><a target="_self" data-slot="button" href="/customers">Customers</a></li>
+                    <li><a target="_self" data-slot="button" href="/blog">Blog</a></li>
+                    <li><a target="_self" data-slot="button" href="/pricing">Pricing</a></li>
+                    <li><a target="_self" data-slot="button" href="/guides">Guides</a></li>
+                    <li><a target="_self" data-slot="button"
+                            href="https://github.com/orgs/mintlify/discussions/categories/feature-requests">Feature
+                            Requests</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>
+                    documentation</h3>
+                <ul>
+                    <li><a target="_self" data-slot="button" href="/docs">Getting Started</a></li>
+                    <li><a target="_self" data-slot="button" href="/docs/api-reference">API Reference</a></li>
+                    <li><a target="_self" data-slot="button" href="/docs/components">Components</a></li>
+                    <li><a target="_self" data-slot="button" href="/docs/changelog">Changelog</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>
+                    company</h3>
+                <ul>
+                    <li><a target="_self" data-slot="button" href="/careers">Careers</a></li>
+                    <li><a target="_self" data-slot="button" href="/wall-of-love">Wall of Love</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>
+                    legal</h3>
+                <ul>
+                    <li><a target="_self" data-slot="button" href="/legal/privacy">Privacy Policy</a></li>
+                    <li><a target="_self" data-slot="button" href="/security/responsible-disclosure">Responsible
+                            Disclosure</a></li>
+                    <li><a target="_self" data-slot="button" href="/legal/terms">Terms Of Service</a></li>
+                    <li><a target="_blank" data-slot="button" href="https://security.mintlify.com">Security</a>
+                    </li>
+                    <li><a target="_blank" data-slot="button"
+                            href="https://mintlify.typeform.com/to/Bxa77EKc">DSR/DSAR</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

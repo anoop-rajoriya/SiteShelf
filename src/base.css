@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/fonts/Roboto-VariableFont_wdth\,wght.ttf') format('ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/fonts/Roboto-Italic-VariableFont_wdth\,wght.ttf') format('ttf');
+    font-style: italic;
+}
+
+:root {
+
+    /* Base Dark Theme Pallets */
+
+    --primary: #3282B8;
+    --primary-hover: #4396cf;
+
+    --bg: #0a0a0a;
+    --surface: #171717;
+    --border: #2e2e2e;
+
+    --text-main: #f5f5f5;
+    --text-muted: #a3a3a3;
+    --text-dim: #737373;
+
+    /* Fluid Typography */
+    --font-sm: clamp(0.75rem, 0.72rem + 0.15vw, 0.875rem);
+    /* 12px -> 14px */
+    --font-base: clamp(0.9375rem, 0.9rem + 0.2vw, 1.0625rem);
+    /* 15px -> 17px */
+    --font-lg: clamp(1.125rem, 1.05rem + 0.4vw, 1.375rem);
+    /* 18px -> 22px */
+    --font-xl: clamp(1.75rem, 1.5rem + 1.2vw, 2.5rem);
+    /* 28px -> 40px */
+
+    --font-main: 'Roboto', sans-serif;
+
+    /* Layout Constants */
+    --radius-sm: 8px;
+    --radius-lg: 12px;
+    --container-width: 1500px;
+
+    /* Shadows for depth */
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.7), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* body.cursor {} */
+
+body.mintlify {
+    /* --- Mintlify Light Theme Palette --- */
+    --primary: #10B981;
+    /* Brand Anchor */
+    --primary-hover: #059669;
+    /* Darker for light mode contrast */
+
+    --bg: #FFFFFF;
+    /* Pure White background */
+    --surface: #F8FAFC;
+    /* Lightest gray for cards/sections */
+    --border: #E2E8F0;
+    /* Soft borders */
+
+    --text-main: #0F172A;
+    /* High legibility dark text */
+    --text-muted: #475569;
+    /* Balanced secondary text */
+    --text-dim: #94A3B8;
+    /* Low-priority labels */
+
+    /* --- Subtle Layout Polish --- */
+    --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+
+    /* Ensure text is sharp on light backgrounds */
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text-main);
+    font-family: var(--font-main);
+    font-size: var(--font-base);
+    display: flex;
+}

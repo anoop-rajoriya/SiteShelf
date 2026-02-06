@@ -1,1 +1,0 @@
-# SiteSelf: A Project For Only Clone Or Personal Static Sites
